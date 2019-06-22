@@ -28,3 +28,4 @@ seaborn==0.9.0
 tqdm==4.32.1
 virtualenv==16.5.0
 widgetsnbextension==3.4.2
+imblearn

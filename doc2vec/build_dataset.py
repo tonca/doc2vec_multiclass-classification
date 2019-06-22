@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     # Save questions
     print("save ",str(df_questions.shape)," questions")
-    df_questions.to_hdf("data/dataset_questions_test.h5", key="tags")
+    df_questions.to_hdf("data/dataset_questions_test.h5", key="data")
 
     # Encode questions
     print("encode questions")
