@@ -19,7 +19,7 @@ def tsne_plot(vectors, labels):
     labelset = list(set(labels))
     colors = ["r","g","b"]
     color_tags = [colors[labelset.index(label)] for label in labels]
-    plt.figure(figsize=(16, 16)) 
+    plt.figure(figsize=(10, 10)) 
     for i in range(len(x)):
         plt.scatter(x[i],y[i],c=color_tags[i])
         plt.annotate(labels[i],
@@ -28,7 +28,7 @@ def tsne_plot(vectors, labels):
                      textcoords='offset points',
                      ha='right',
                      va='bottom')
-    plt.savefig("data/results/tsne_fewepochs.png")
+    plt.savefig("data/results/tsne_php-python_trained.png")
 
 
 if __name__ == "__main__":
@@ -36,9 +36,9 @@ if __name__ == "__main__":
     model= Doc2Vec.load("data/results/d2v.model")
 
     #to find the vector of a document which is not in training data
-    train_data = pd.read_hdf("data/tagged.hdf", key="chunk_0")
+    train_data = pd.read_hdf("data/tagged.hdf", key="chunk_10")
     
-    selected = ["javascript","c++"]
+    selected = ["php","python"]
     vectors = []
     tags = []
     for doc in train_data[:1000].tolist():
