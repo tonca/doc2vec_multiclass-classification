@@ -1,4 +1,4 @@
-# MultiLabel Text classification with Doc2Vec
+# Multiclass Text classification with Doc2Vec
 
 The objective of this project is to investigate the technique of word embeddings for the representation of sentences. Word embeddings are usually applied to single words, while with this technique it is possible to represent groups of words with the same approach, which simplifies notably the process of analysing text through highly non linear models, such as artificial neural networks.
 There exist more traditional methods for dealing with such problems, which are based on Bags-of-Words or tf-idf representations. those methods are based on word counting, while they do not take in consideration the relative positions of the words.
