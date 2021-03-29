@@ -19,7 +19,7 @@ numpy==1.16.3
 pandas==0.24.2
 pandocfilters==1.4.2
 pyarrow==0.13.0
-Pygments==2.4.0
+Pygments==2.7.4
 pygobject==3.26.1
 requests==2.22.0
 scikit-learn==0.21.1
